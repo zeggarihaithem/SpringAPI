@@ -11,6 +11,7 @@ public class VendorServiceImpl implements VendorService {
     VendorRepository vendorRepository;
 
     public VendorServiceImpl(VendorRepository vendorRepository) {
+
         this.vendorRepository = vendorRepository;
     }
 
@@ -30,6 +31,7 @@ public class VendorServiceImpl implements VendorService {
 
     @Override
     public Vendor getVendor(String vendorId) {
+
         return vendorRepository.findById(vendorId).get();
     }
 
@@ -41,6 +43,7 @@ public class VendorServiceImpl implements VendorService {
 
     @Override
     public List<Vendor> getAllVendors() {
+
         return vendorRepository.findAll();
     }
 }
