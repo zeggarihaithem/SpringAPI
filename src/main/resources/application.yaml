@@ -1,0 +1,10 @@
+#Configuration de la base de données crée via mysql workbench
+Spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/Vendor?useSSL=false
+    username: root
+    password:
+#JPA Settings
+  jpa:
+    hibernate:
+      ddl-auto: create
